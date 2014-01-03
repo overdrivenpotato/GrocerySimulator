@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9b8d064-0125-4cc4-b9ae-d0ebad7e9dc3" name="Default" comment="Initial Commit.&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/underthehood/Action.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/underthehood/ConverseGen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/underthehood/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/underthehood/Player.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/underthehood/Scenario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="f9b8d064-0125-4cc4-b9ae-d0ebad7e9dc3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/underthehood/ActionString.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/underthehood/Action.java" afterPath="$PROJECT_DIR$/src/underthehood/Action.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/underthehood/Main.java" afterPath="$PROJECT_DIR$/src/underthehood/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/underthehood/Player.java" afterPath="$PROJECT_DIR$/src/underthehood/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/underthehood/Scenario.java" afterPath="$PROJECT_DIR$/src/underthehood/Scenario.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Grocery Simulator.iws" />
@@ -75,10 +74,16 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/underthehood/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="38" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="1152">
+            <state line="54" column="23" selection-start="2181" selection-end="2181" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1548">
               <folding>
-                <element signature="e#938#1084#0" expanded="true" />
-                <element signature="e#1073#1074#0" expanded="true" />
+                <element signature="e#336#635#0" expanded="true" />
+                <element signature="e#624#625#0" expanded="true" />
+                <element signature="e#734#902#0" expanded="true" />
+                <element signature="e#891#892#0" expanded="true" />
+                <element signature="e#1019#1170#0" expanded="true" />
+                <element signature="e#1159#1160#0" expanded="true" />
+                <element signature="e#1681#1854#0" expanded="true" />
+                <element signature="e#1843#1844#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,7 +92,7 @@
       <file leaf-file-name="ConverseGen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/underthehood/ConverseGen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+            <state line="6" column="40" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
@@ -96,31 +101,41 @@
       <file leaf-file-name="Action.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/underthehood/Action.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="28" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+            <state line="4" column="30" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scenario.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Scenario.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/underthehood/Scenario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="23" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.5507246" vertical-offset="270" max-vertical-offset="1188">
+            <state line="21" column="0" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="990">
               <folding>
-                <element signature="e#1215#1216#0" expanded="true" />
-                <element signature="e#1249#1250#0" expanded="true" />
-                <element signature="e#1296#1297#0" expanded="true" />
-                <element signature="e#1326#1327#0" expanded="true" />
+                <element signature="e#1112#1113#0" expanded="true" />
+                <element signature="e#1142#1143#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ActionString.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/underthehood/ActionString.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="18" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/underthehood/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="32" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
-              <folding />
+            <state line="20" column="14" selection-start="344" selection-end="344" vertical-scroll-proportion="0.38338658" vertical-offset="0" max-vertical-offset="939">
+              <folding>
+                <element signature="e#264#265#0" expanded="true" />
+                <element signature="e#292#293#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,11 +155,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/underthehood/main.java" />
         <option value="$PROJECT_DIR$/src/underthehood/Requirement.java" />
-        <option value="$PROJECT_DIR$/src/underthehood/Player.java" />
-        <option value="$PROJECT_DIR$/src/underthehood/Action.java" />
         <option value="$PROJECT_DIR$/src/underthehood/ConverseGen.java" />
-        <option value="$PROJECT_DIR$/src/underthehood/Main.java" />
+        <option value="$PROJECT_DIR$/src/underthehood/Action.java" />
+        <option value="$PROJECT_DIR$/src/underthehood/Player.java" />
+        <option value="$PROJECT_DIR$/src/underthehood/ActionString.java" />
         <option value="$PROJECT_DIR$/src/underthehood/Scenario.java" />
+        <option value="$PROJECT_DIR$/src/underthehood/Main.java" />
       </list>
     </option>
   </component>
@@ -181,6 +197,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,7 +236,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -287,6 +303,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -312,19 +341,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -421,7 +437,11 @@
       <created>1388696570856</created>
       <updated>1388696570856</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created mockup game.">
+      <created>1388710053665</created>
+      <updated>1388710053665</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -432,7 +452,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -445,7 +465,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.185836" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32953367" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284974" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -466,7 +486,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Initial Commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit." />
+    <MESSAGE value="Created mockup game." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created mockup game." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -476,45 +497,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/underthehood/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/underthehood/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="32" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
-          <folding />
+        <state line="24" column="38" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1152">
+          <folding>
+            <element signature="e#336#635#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#734#902#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+            <element signature="e#1019#1170#0" expanded="true" />
+            <element signature="e#1159#1160#0" expanded="true" />
+            <element signature="e#1681#1854#0" expanded="true" />
+            <element signature="e#1843#1844#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/underthehood/ConverseGen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+        <state line="16" column="0" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="612">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/underthehood/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="38" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="1152">
-          <folding>
-            <element signature="e#938#1084#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/underthehood/Action.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+        <state line="6" column="28" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="252">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/underthehood/Scenario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="23" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.5507246" vertical-offset="270" max-vertical-offset="1188">
+        <state line="30" column="19" selection-start="901" selection-end="901" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1188">
           <folding>
-            <element signature="e#1215#1216#0" expanded="true" />
-            <element signature="e#1249#1250#0" expanded="true" />
-            <element signature="e#1296#1297#0" expanded="true" />
-            <element signature="e#1326#1327#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/underthehood/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="32" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="648">
+          <folding>
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="621" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/underthehood/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="23" selection-start="2181" selection-end="2181" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1548">
+          <folding>
+            <element signature="e#336#635#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#734#902#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+            <element signature="e#1019#1170#0" expanded="true" />
+            <element signature="e#1159#1160#0" expanded="true" />
+            <element signature="e#1681#1854#0" expanded="true" />
+            <element signature="e#1843#1844#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/underthehood/ConverseGen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="40" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/underthehood/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="30" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/underthehood/Scenario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="990">
+          <folding>
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/underthehood/ActionString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="18" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0" vertical-offset="116" max-vertical-offset="738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/underthehood/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="14" selection-start="344" selection-end="344" vertical-scroll-proportion="0.38338658" vertical-offset="0" max-vertical-offset="939">
+          <folding>
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
           </folding>
         </state>
       </provider>

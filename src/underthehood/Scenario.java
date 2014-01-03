@@ -6,42 +6,31 @@ import java.util.ArrayList;
  * Created by marko on 02/01/14.
  */
 public class Scenario {
-    private String textPrompt;
-    private String description;
+    private ActionString textPrompt;
+    private ActionString description;
     private ArrayList<Scenario> options;
-    private Action complete;
-    private ConverseGen convGen;
 
-    public Scenario(String textPrompt, String description, Scenario... scenarios) {
+    public Scenario(Object textPrompt, Object description, Scenario... scenarios) {
+        this.textPrompt = textPrompt instanceof String ? new ActionString((String) textPrompt) :
+                textPrompt instanceof ActionString ? (ActionString) textPrompt : null;
+
+        this.description = description instanceof String ? new ActionString((String) description) :
+                description instanceof ActionString ? (ActionString) description : null;
+
         options = new ArrayList<Scenario>();
-        this.textPrompt = textPrompt;
-        this.description = description;
-
-        for(int i = 0; i < scenarios.length; i++) {
-            options.add(scenarios[i]);
-        }
-    }
-
-    public Scenario(String textPrompt, String description, Action complete, Scenario... scenarios) {
-        this(textPrompt, description, scenarios);
-        this.complete = complete;
-    }
-
-    public Scenario(ConverseGen converseGen, String description, Scenario... scenarios) {
-        this((String) null, description, scenarios);
-        this.convGen = converseGen;
+        for(Scenario scenario : scenarios)
+            options.add(scenario);
     }
 
     public String getTextPrompt() {
-        if(complete != null)
-            complete.onChoose();
-        if(convGen != null)
-            return convGen.getQuestion();
-        return textPrompt;
+        try {
+            textPrompt.onEvent();
+        } catch (Exception e) {}
+        return textPrompt.toString();
     }
 
     public String getDescription() {
-        return description;
+        return description.toString();
     }
 
     public ArrayList<Scenario> getOptions() {
