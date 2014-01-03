@@ -7,6 +7,8 @@ public class Player {
     private static Player player;
     private int grapeFruitCount;
     private int money;
+    private boolean knife = false;
+    private boolean shankedWoman;
 
     public Player()
     {
@@ -17,7 +19,7 @@ public class Player {
         return money;
     }
 
-    public Object getCartValue() {
+    public int getCartValue() {
         return grapeFruitCount * 100;
     }
 
@@ -35,5 +37,31 @@ public class Player {
     static
     {
         player = new Player();
+    }
+
+    public void buyCart() {
+        money -= getCartValue();
+    }
+
+
+    public void setKnife(boolean knife) {
+        this.knife = knife;
+    }
+
+    public Boolean hasKnife() {
+        return Boolean.valueOf(knife);
+    }
+
+    public Boolean hasShanked() {
+        return Boolean.valueOf(shankedWoman);
+    }
+
+    public void shankWoman()
+    {
+        shankedWoman = true;
+    }
+
+    public void addMoney(int money) {
+        this.money += money;
     }
 }

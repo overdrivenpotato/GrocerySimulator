@@ -9,6 +9,7 @@ public class Scenario {
     private ActionString textPrompt;
     private ActionString description;
     private ArrayList<Scenario> options;
+    private Action visible;
 
     public Scenario(Object textPrompt, Object description, Scenario... scenarios) {
         this.textPrompt = textPrompt instanceof String ? new ActionString((String) textPrompt) :
@@ -20,6 +21,11 @@ public class Scenario {
         options = new ArrayList<Scenario>();
         for(Scenario scenario : scenarios)
             options.add(scenario);
+    }
+
+    public Scenario(Object textPrompt, Object description, Action visible, Scenario... scenarios) {
+        this(textPrompt, description, scenarios);
+        this.visible = visible;
     }
 
     public String getTextPrompt() {
@@ -39,6 +45,16 @@ public class Scenario {
 
     public boolean hasOptions() {
         return options.size() > 0;
+    }
+
+    public boolean isVisible()
+    {
+        try {
+        return ((Boolean) visible.call()).booleanValue();
+        } catch(Exception e)
+        {
+            return true;
+        }
     }
 
     public Scenario addOptions(Scenario... scenarios) {

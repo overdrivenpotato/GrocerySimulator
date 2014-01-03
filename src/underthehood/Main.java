@@ -1,5 +1,6 @@
 package underthehood;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -17,12 +18,14 @@ public class Main {
         Scenario pay = new Scenario(new ActionString(null, new Action() {
             @Override
             public Object call() {
-                if(Player.player().getMoney() > 0)
+                if(Player.player().getMoney() > Player.player().getCartValue()) {
+                    Player.player().buyCart();
                     return "Here you go!";
-                else
-                {
-                    return "I dont have any money!";
                 }
+                else if(Player.player().getMoney() <= 0)
+                    return "I don't have any money!";
+                else
+                    return "I don't have enough money!";
             }
         }), "Let me just get my wallet");
         Scenario countItems = new Scenario(new ActionString(null, new Action() {
@@ -39,25 +42,58 @@ public class Main {
         }), "No, I just came to talk to you.");
         Scenario cashier = new Scenario("\"Hi There! Do you have any items you would like to check out?\"", "Talk to the cashier", pointlessConversation, countItems);
 
+        Scenario shank = new Scenario(new ActionString("You have shanked her, she has dropped 32000 monies.", new Action() {
+            @Override
+            public Object call() {
+                Player.player().addMoney(32000);
+                Player.player().shankWoman();
+                return null;
+            }
+        }), "Shank her.", new Action() {
+            @Override
+            public Object call() {
+                return Player.player().hasKnife();
+            }
+        });
         Scenario askForMoney = new Scenario("She doesn't give you money.", "Ask her for money.");
-        Scenario woman = new Scenario("\"Hi there little hippo!\"", "Talk to woman in aisle.", askForMoney);
-        Scenario pickupItems = new Scenario(new ActionString("You have picked up a grapefruit.", new Action() {
+        Scenario woman = new Scenario("\"Hi there little hippo!\"", "Talk to woman in aisle.", new Action() {
+            @Override
+            public Object call() {
+                return !Player.player().hasShanked();
+            }
+        }, askForMoney, shank);
+        Scenario knife = new Scenario(new ActionString("You have picked up a knife.", new Action() {
+            @Override
+            public Object call() {
+                Player.player().setKnife(true);
+                return null;
+            }
+        }), "Pick up knife", new Action() {
+            @Override
+            public Object call() {
+                return !Player.player().hasKnife();
+            }
+        });
+        Scenario grapefruit = new Scenario(new ActionString("You have picked up a grapefruit.", new Action() {
             @Override
             public Object call() {
                 Player.player().addGrapefruit();
                 return null;
             }
-        }), "Pick up grapefruit", woman);
-        pickupItems.addOptions(pickupItems);
-        Scenario shelf = new Scenario("There are a lot of items on the shelf.", "Go to shelf.", pickupItems, woman);
+        }), "Pick up grapefruit");
+        grapefruit.addOptions(grapefruit, knife);
+        Scenario shelf = new Scenario("There are a lot of items on the shelf.", "Go to shelf.", grapefruit, knife);
         Scenario aisle = new Scenario("You have walked into the aisle.", "Walk into aisle.", shelf, woman);
 
         current = new Scenario("You are in the store main area.", "Go to store main area", aisle, cashier);
         pay.addOptions(current);
+        knife.addOptions(grapefruit, current, aisle);
         pointlessConversation.addOptions(current, cashier);
         askForMoney.addOptions(shelf, woman, current);
-        pickupItems.addOptions(current);
-        shelf.addOptions(current);
+        shank.addOptions(shelf, current);
+        grapefruit.addOptions(current, aisle);
+        shelf.addOptions(current, aisle);
+        aisle.addOptions(current);
 
         while(true)
         {
@@ -66,16 +102,19 @@ public class Main {
             if(!current.hasOptions())
                 break;
 
-            for(int i = 0; i < current.getOptions().size(); i++)
-            {
-                System.out.println((char)('A' + i) + ") " + current.getOptions().get(i).getDescription());
-            }
+            ArrayList<Scenario> optionList = new ArrayList<Scenario>();
+            for(Scenario scenario : current.getOptions())
+                if(scenario.isVisible())
+                    optionList.add(scenario);
+
+            for(int i = 0; i < optionList.size(); i++)
+                System.out.println((char)('A' + (i)) + ") " + optionList.get(i).getDescription());
+
 
             int choice = in.next().toUpperCase().charAt(0) - 'A';
-
             System.out.println();
 
-            current = current.getOptions().get(choice);
+            current = optionList.get(choice);
         }
     }
 }
